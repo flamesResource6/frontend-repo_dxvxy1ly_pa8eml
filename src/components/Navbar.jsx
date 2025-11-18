@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import { Bot, MessageSquare, CalendarDays, BookOpenText, Sparkles } from 'lucide-react'
+import { Bot, MessageSquare, CalendarDays, BookOpen, Sparkles, UserRound } from 'lucide-react'
 
 export default function Navbar() {
   const navItem = ({ to, label, icon: Icon }) => (
@@ -26,9 +26,9 @@ export default function Navbar() {
         </Link>
         <nav className="flex items-center gap-2">
           {navItem({ to: '/chat', label: 'Chat', icon: MessageSquare })}
-          {navItem({ to: '/research', label: 'Deep Research', icon: BookOpenText })}
+          {navItem({ to: '/research', label: 'Deep Research', icon: BookOpen })}
           {navItem({ to: '/planner', label: 'Weekly Planner', icon: CalendarDays })}
-          {navItem({ to: '/roleplay', label: 'Role-play', icon: Bot })}
+          {navItem({ to: '/roleplay', label: 'Role-play', icon: UserRound })}
         </nav>
       </div>
     </header>
